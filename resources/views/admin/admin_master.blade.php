@@ -6,14 +6,14 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="{{ asset('backend/dist/images/MAN1.png') }}" rel="shortcut icon">
+    <link href="{{ asset('backend/dist/images/logo-k.png') }}" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
     <meta name="keywords"
         content="admin template, Midone Admin Template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
-    <title>MAN 1 Padang</title>
+    <title>Marketplace Catering</title>
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="{{ asset('backend/dist/css/app.css') }}">
     <!-- END: CSS Assets-->
@@ -37,67 +37,7 @@
 
 
 <body class="py-5">
-    <!-- BEGIN: Mobile Menu -->
-    {{--  <div class="mobile-menu md:hidden">
-        <div class="mobile-menu-bar">
-            <a href="" class="flex mr-auto">
-                <img alt="Midone - HTML Admin Template" class="w-6"
-                    src="{{ asset('backend/dist/images/MAN1.png') }}">
-            </a>
-            <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="bar-chart-2"
-                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
-        </div>
-        <div class="scrollable">
-            <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="x-circle"
-                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
-            <ul class="scrollable__content py-2">
-                <li>
-                    <a href="{{ route('dashboard') }}" class="menu menu--active">
-                        <div class="menu__icon"> <i data-lucide="home"></i> </div>
-                        <div class="menu__title"> Dashboard </div>
-                    </a>
-
-                </li>
-
-                <li>
-                    <a href="javascript:;.html" class="menu menu--active">
-                        <div class="menu__icon"> <i data-lucide="home"></i> </div>
-                        <div class="menu__title"> Dashboard <i data-lucide="chevron-down"
-                                class="menu__sub-icon transform rotate-180"></i> </div>
-                    </a>
-                    <ul class="menu__sub-open">
-                        <li>
-                            <a href="index.html" class="menu menu--active">
-                                <div class="menu__icon"> <i data-lucide="activity"></i> </div>
-                                <div class="menu__title"> Overview 1 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="side-menu-light-dashboard-overview-2.html" class="menu">
-                                <div class="menu__icon"> <i data-lucide="activity"></i> </div>
-                                <div class="menu__title"> Overview 2 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="side-menu-light-dashboard-overview-3.html" class="menu">
-                                <div class="menu__icon"> <i data-lucide="activity"></i> </div>
-                                <div class="menu__title"> Overview 3 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="side-menu-light-dashboard-overview-4.html" class="menu">
-                                <div class="menu__icon"> <i data-lucide="activity"></i> </div>
-                                <div class="menu__title"> Overview 4 </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-    </div>  --}}
-
-
+ 
     <!-- END: Mobile Menu -->
     <div class="flex mt-[4.7rem] md:mt-0">
         <!-- BEGIN: Side Menu -->

@@ -1,12 +1,14 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\PesananController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RestoranController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/dashboard', function () {
@@ -35,9 +37,30 @@ Route::controller(AdminController::class)->middleware(['auth'])->group(function 
 
 Route::controller(RestoranController::class)->middleware(['auth'])->group(function () {
 
-    Route::get('/restosan', 'all')->name('restoran');
-    Route::get('/restosan/create', 'add')->name('restoran.add');
-    Route::post('/restosan/store', 'create')->name('restoran.store');
-    Route::get('/restosan/edit', 'edit')->name('restoran.edit');
-    Route::post('/restosan/update', 'update')->name('restoran.update');
+    Route::get('/restoran', 'all')->name('restoran');
+    Route::get('/restoran/create', 'add')->name('restoran.add');
+    Route::post('/restoran/store', 'create')->name('restoran.store');
+    Route::get('/restoran/edit/{id}', 'edit')->name('restoran.edit');
+    Route::post('/restoran/update', 'update')->name('restoran.update');
+    Route::get('/restoran/customer', 'customerall')->name('customer');
+});
+
+
+
+Route::controller(MenuController::class)->middleware(['auth'])->group(function () {
+
+    Route::get('/menu', 'all')->name('menu');
+    Route::get('/menu/create', 'add')->name('menu.add');
+    Route::post('/menu/store', 'create')->name('menu.store');
+    Route::get('/menu/edit/{id}', 'edit')->name('menu.edit');
+    Route::post('/menu/update', 'update')->name('menu.update');
+    Route::get('/menu/delete/{id}', 'delete')->name('menu.delete');
+    Route::get('/menu/customer/{id}', 'menucostumer')->name('menu.customer');
+});
+
+
+Route::controller(PesananController::class)->middleware(['auth'])->group(function () {
+
+
+    Route::post('/pesan/store', 'store')->name('pesan.store');
 });

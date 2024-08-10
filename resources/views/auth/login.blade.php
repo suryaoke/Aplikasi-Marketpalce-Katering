@@ -13,7 +13,7 @@
     <meta name="keywords"
         content="admin template, Midone Admin Template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
-    <title>Login - Surya Katering</title>
+    <title>Login - Marketplace Katering</title>
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="{{ asset('backend/dist/css/app.css') }}" />
     <!-- END: CSS Assets-->
@@ -27,16 +27,15 @@
             <!-- BEGIN: Login Info -->
             <div class="hidden xl:flex flex-col min-h-screen">
                 <a href="{{ url('/') }}" class="-intro-x flex items-center pt-5">
-                    <img alt="Midone - HTML Admin Template" class="w-20"
-                        src="{{ asset('backend/dist/images/logo-rm.png') }}">
-                    <span class="text-white text-2xl ml-3 "> Surya Katering </span>
+                    <img alt="Midone - HTML Admin Template" class="w-40"
+                        src="{{ asset('backend/dist/images/logo-k.png') }}">
+                    <span class="text-white text-2xl ml-3 "> Marketplace Katering </span>
                 </a>
                 <div class="my-auto ">
                     <img width="370px" alt="Midone - HTML Admin Template" class="-intro-x -mt-16"
-                        src="{{ asset('backend/dist/images/layanan.png') }}">
+                        src="{{ asset('backend/dist/images/landing.png') }}">
                     <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">
-                        Masakan Padang Minang <br>
-                        Surya Katering
+                        Marketplace Katering
                     </div>
 
                 </div>
@@ -66,16 +65,9 @@
                             <button class="btn btn-primary py-3 px-4 w-full xl:w-32 xl:mr-3 align-top"
                                 type="submit">Login</button>
                             <div class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top dropdown inline-block"
-                                data-tw-placement="bottom"> <a aria-expanded="false"
+                                data-tw-placement="bottom"> <a href="{{route('register')}}"
                                     data-tw-toggle="dropdown">Register</a>
-                                <div class="dropdown-menu w-40">
-                                    <ul class="dropdown-content">
-                                        <li> </li>
-                                        <li>
-                                        </li>
-                                        <li> </li>
-                                    </ul>
-                                </div>
+                                
                             </div>
                         </div>
                     </form>

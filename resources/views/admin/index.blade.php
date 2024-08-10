@@ -21,18 +21,21 @@
 
 
                     <div class="grid grid-cols-12 gap-6 mt-3">
-                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
-                            <div class="report-box zoom-in">
-                                <div class="box p-8">
-                                    <div class="flex">
-                                        <i data-lucide="menu" class="report-box__icon text-pending"></i>
+                        @if (Auth::user()->role == 1)
+                            <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                <div class="report-box zoom-in">
+                                    <div class="box p-8">
+                                        <div class="flex">
+                                            <i data-lucide="menu" class="report-box__icon text-pending"></i>
 
+                                        </div>
+                                        <div class="text-3xl font-medium leading-8 mt-6"></div>
+                                        <div class="text-base text-slate-500 mt-1">Menu </div>
                                     </div>
-                                    <div class="text-3xl font-medium leading-8 mt-6"></div>
-                                    <div class="text-base text-slate-500 mt-1">Menu </div>
                                 </div>
                             </div>
-                        </div>
+                        @endif
+
 
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">

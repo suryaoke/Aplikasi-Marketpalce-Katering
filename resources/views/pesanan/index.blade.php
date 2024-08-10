@@ -30,11 +30,10 @@
                             <table id="datatable" class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th class="whitespace-nowrap">Nama</th>
-                                        <th class="whitespace-nowrap">Alamat</th>
-                                        <th class="whitespace-nowrap">Kontak</th>
-                                        <th class="whitespace-nowrap">Deskripsi</th>
-                                        <th class="whitespace-nowrap">Owner</th>
+                                        <th class="whitespace-nowrap">Nama Menu</th>
+                                        <th class="whitespace-nowrap">Total</th>
+                                        <th class="whitespace-nowrap">Harga</th>
+                                        <th class="whitespace-nowrap">Restoran</th>
 
                                 </thead>
                                 <tbody>
@@ -45,11 +44,19 @@
                                         <td style="white-space: nowrap;" style="text-transform: capitalize;">
                                             {{ $restoran->nama }}
                                         </td>
-                                        <td class="whitespace-nowrap" style="text-transform: capitalize;">
-                                            {{ $restoran->alamat }} </td>
-                                        <td class="whitespace-nowrap"> {{ $restoran->kontak }} </td>
-                                        <td class="whitespace-nowrap"> {{ $restoran->deskripsi }} </td>
-                                        <td class="whitespace-nowrap"> {{ $restoran->user->name }} </td>
+                                        <td style="white-space: nowrap;" style="text-transform: capitalize;">
+                                            {{ $restoran->nama }}
+                                        </td>
+
+                                        <td style="white-space: nowrap;" style="text-transform: capitalize;">
+                                            {{ $restoran->nama }}
+                                        </td>
+
+                                        <td style="white-space: nowrap;" style="text-transform: capitalize;">
+                                            {{ $restoran->nama }}
+                                        </td>
+
+
 
 
 

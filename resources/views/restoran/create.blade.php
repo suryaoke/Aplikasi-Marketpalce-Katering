@@ -11,12 +11,9 @@
         </div>
     @endif
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script> <!-- Include jQuery Validation plugin -->
-
     <div class="intro-y flex items-center mt-8 mb-4">
         <h1 class="text-lg font-medium mr-auto">
-            Add Guru
+            Add Restoran
         </h1>
     </div>
 
@@ -59,8 +56,3 @@
 @endsection
 
 
-'nama' => ['required', 'max:100'],
-'alamat' => ['required', 'max:100'],
-'kontak' => ['required', 'max:20'],
-'deskripsi' => ['required', 'max:100'],
-'user_id' => ['required', 'max:20']
